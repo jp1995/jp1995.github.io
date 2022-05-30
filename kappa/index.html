@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Kappa</title>
+   <meta charset="UTF-8">
+   <meta lang="en">
+   <meta name="keywords" content="Kappa Launcher">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+   <link rel="manifest" href="images/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <style media="screen">
+     html {
+       background: url("Kappa_1440p.png") no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+     }
+     body {
+       font-family: arial;
+       font-size: 16px;
+	min-height: 100%;
+	min-width: 58rem;
+	width: 50%;
+	margin: 0 auto;
+     }
+     .maincontainer {
+       margin: 0;
+       position: relative;
+       top: 2;
+       left: 50%;
+       transform: translate(-50%, 0%);
+       -webkit-transform: translate(-50%, 0%);
+       -moz-transform: translate(-50%, 0%);
+       -ms-transform: translate(-50%, 0%);
+       -o-transform: translate(-50%, 0%);
+     }
+     .container1 {
+       background-color: #ece6f0;
+       margin-left: 15%;
+       margin-right: 15%;
+
+     }
+     table {
+	width: 100%;
+     }
+     hr {
+	width: 100%;
+	border-top: 1px solid black;
+     }
+     #title {
+       font-family: arial;
+       font-weight: bold;
+       font-size: 18px;
+	margin-left: 3%;
+     }
+     .container2 {
+       background-color: #ece6f0;
+       padding: 2%;
+	margin-top: -3%;
+       margin-left: 15%;
+       margin-right: 15%;
+       margin-bottom: 1.5%;
+     }
+     #first_p {
+	margin-top: 3%;
+     }
+     .container3 {
+       background-color: #ece6f0;
+       position: absolute;
+       padding: 2%;
+       left: 15%;
+       right: 15%;
+     }
+     #bold {
+       font-weight: bold;
+     }
+     #button1 {
+       background-color: #5d8fd9;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+     }
+     .button {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding-top: 3%;
+       padding-bottom: 1%;
+     }
+     a {
+       color: #5d8fd9;
+     }
+     a:visited {
+       color: #5d8fd9;
+       text-decoration: none;
+     }
+     a:hover {
+       color: #699ffa;
+     }
+     input {
+       width: 250px;
+       margin-left: 1%;
+     }
+     #success {
+       float: right;
+       display: inline-block;
+       margin-top: -4%; 
+     }
+     #smol {
+       font-size: 14px;
+   </style>
+
+</head>
+
+<body>
+  <div class="maincontainer">
+    <div class="container1">
+      <table><tr><td class="half"><p id="title">Kappa Launcher OAuth Generator</p></td><td class="half"></td></tr></table>
+    </div>
+    <div class="container2">
+    <hr>
+      <p id="first_p">As of May 1, 2020, the Helix API requires that the clientID provided in the corresponding header 
+matches the clientID used to generate the OAuth token. Because of this, a third-party generator could no 
+longer 
+be used.</p>
+      <p>Use this tool to generate the OAuth token for Kappa Launcher. Then copy the token to your config 
+file, which is generated when you first launch the binary.</p>
+      <p id="bold">To revoke access, disconnect "Kappa Launcher" from your <a 
+href="http://www.twitch.tv/settings/connections">Twitch settings.</a></p>
+      <p>For more information, visit <a href="https://github.com/jp1995/kappa-launcher/" 
+target="_blank">Kappa Launcher on github.</a></p>
+      <p id="smol">(Technical: This application uses the <a 
+href="https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow">implicit 
+code flow</a> for the Twitch API to retrieve your token. This means that the server has no means of storing 
+your token, and it is only visible to your browser.) </p>
+      <div class="button">
+        <a 
+href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3lyhpjkzellmam3843w7eq3es84375&scope=user:read:follows&redirect_uri=https://spheroid.xyz/kappa/"
+id="button1">Generate</a>
+      </div>
+    </div>
+    <div class="container3" id="hidden">
+      <p>Token generation successful!</p>
+      <form class="" action="index.html" method="post">
+        <label for="token">Your OAuth token is:</label>
+        <input type="text" id="token" name="Your OAuth token is:" readonly>
+      </form>
+      <p id="success"></p>
+
+    </div>
+  </div>
+    <script type="text/javascript">
+    function getHashValue(key) {
+    var matches = location.hash.match(new RegExp(key+'=([^&]*)'));
+    return matches ? matches[1] : null;
+    }
+    
+    document.getElementById('token').value = getHashValue('access_token');
+
+    document.getElementById('token').onclick = function() {
+      this.select();
+      document.execCommand('copy');
+      document.getElementById("success").innerHTML = "Copied to clipboard!";
+    }
+    function hideDiv() {
+      if (getHashValue('access_token') == null) {
+        document.getElementById("hidden").style.display = "none";
+      } else {
+        document.getElementById("hidden").style.display = "block";
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function() {
+        hideDiv();
+    });
+  </script>
+</body>
+
+</html>
+
