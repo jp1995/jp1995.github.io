@@ -52,7 +52,7 @@
        -o-transform: translate(-50%, 0%);
      }
      .container1 {
-       background-color: #ece6f0;
+       background-color: #e8e8eb;
        margin-left: 15%;
        margin-right: 15%;
 
@@ -71,7 +71,7 @@
 	margin-left: 3%;
      }
      .container2 {
-       background-color: #ece6f0;
+       background-color: #e8e8eb;
        padding: 2%;
 	margin-top: -3%;
        margin-left: 15%;
@@ -82,11 +82,12 @@
 	margin-top: 3%;
      }
      .container3 {
-       background-color: #ece6f0;
+       background-color: #e8ebe8;
        position: absolute;
        padding: 2%;
        left: 15%;
        right: 15%;
+       height: 21%
      }
      #bold {
        font-weight: bold;
@@ -100,6 +101,7 @@
        text-decoration: none;
        display: inline-block;
        font-size: 16px;
+       border-radius: 3px;
      }
      .button {
        display: flex;
@@ -119,13 +121,22 @@
        color: #699ffa;
      }
      input {
-       width: 250px;
-       margin-left: 1%;
+       width: 380px;
+       margin-top: 2%;
+       height: 35px;
+       border-radius: 3px;
+       box-sizing: border-box;
+       border: 1px solid;
+       padding: 10px;
+     }
+     form {
+        margin-top: 1%
      }
      #success {
-       float: right;
-       display: inline-block;
-       margin-top: -4%; 
+        display: inline-block;
+        text-align: center;
+        margin-left: 3%;
+
      }
      #smol {
        font-size: 14px;
@@ -159,13 +170,13 @@ id="button1">Generate</a>
       </div>
     </div>
     <div class="container3" id="hidden">
-      <p>Token generation successful!</p>
       <form class="" action="index.html" method="post">
-        <label for="token">Your OAuth token is:</label>
-        <input type="text" id="token" name="Your OAuth token is:" readonly>
+        <label for="token">Token generation successful:</label>
+        <br>
+        <input type="search" id="token" name="Your OAuth token is:" readonly>
+        <p id="success"></p>
       </form>
-      <p id="success"></p>
-
+    
     </div>
   </div>
     <script type="text/javascript">
