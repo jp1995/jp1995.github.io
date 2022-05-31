@@ -26,109 +26,93 @@
    <meta name="theme-color" content="#ffffff">
    <style media="screen">
      html {
-       background: url("Kappa_1440p.png") no-repeat center center fixed;
-       -webkit-background-size: cover;
-       -moz-background-size: cover;
-       -o-background-size: cover;
-       background-size: cover;
+        background: url("Kappa_1440p.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
      }
      body {
-       font-family: arial;
-       font-size: 16px;
-	min-height: 100%;
-	min-width: 58rem;
-	width: 50%;
-	margin: 0 auto;
+        font-family: arial;
+        font-size: 16px;
+        min-height: 100%;
+        min-width: 58rem;
+        width: 50%;
+        margin: 0 auto;
      }
      .maincontainer {
-       margin: 0;
-       position: relative;
-       top: 2;
-       left: 50%;
-       transform: translate(-50%, 0%);
-       -webkit-transform: translate(-50%, 0%);
-       -moz-transform: translate(-50%, 0%);
-       -ms-transform: translate(-50%, 0%);
-       -o-transform: translate(-50%, 0%);
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        -webkit-transform: translate(-50%, -0%);
+        -moz-transform: translate(-50%, -0%);
+        -ms-transform: translate(-50%, -0%);
+        -o-transform: translate(-50%, -0%);
      }
      .container1 {
-       background-color: #e8e8eb;
-       margin-left: 15%;
-       margin-right: 15%;
-
-     }
-     table {
-	width: 100%;
-     }
-     hr {
-	width: 100%;
-	border-top: 1px solid black;
+        background-color: #e8e8eb;
+        margin-left: 15%;
+        margin-right: 15%;
      }
      #title {
-       font-family: arial;
-       font-weight: bold;
-       font-size: 18px;
-	margin-left: 3%;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 3%;
+        margin-top: 0%;
      }
      .container2 {
-       background-color: #e8e8eb;
-       padding: 2%;
-	margin-top: -3%;
-       margin-left: 15%;
-       margin-right: 15%;
-       margin-bottom: 2%;
-     }
-     #first_p {
-	margin-top: 3%;
+        background-color: #e8e8eb;
+        padding: 2%;
+        margin-top: -3%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 2%;
      }
      .container3 {
-       background-color: #e8ebe8;
-       position: absolute;
-       padding: 2%;
-       left: 15%;
-       right: 15%;
-       height: 23.5%
-     }
-     #bold {
-       font-weight: bold;
+        background-color: #e8ebe8;
+        position: absolute;
+        padding: 2%;
+        left: 15%;
+        right: 15%;
+        height: 23.5%
      }
      #button1 {
-       background-color: #5d8fd9;
-       border: none;
-       color: white;
-       padding: 15px 32px;
-       text-align: center;
-       text-decoration: none;
-       display: inline-block;
-       font-size: 16px;
-       border-radius: 3px;
+        background-color: #5d8fd9;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 3px;
      }
      .button {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       padding-top: 3%;
-       padding-bottom: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 1%;
      }
      a {
-       color: #5d8fd9;
+        color: #5d8fd9;
      }
      a:visited {
-       color: #5d8fd9;
-       text-decoration: none;
+        color: #5d8fd9;
+        text-decoration: none;
      }
      a:hover {
-       color: #699ffa;
+        color: #699ffa;
      }
      input {
-       width: 380px;
-       margin-top: 2%;
-       height: 45px;
-       border-radius: 3px;
-       box-sizing: border-box;
-       border: 1px solid;
-       padding: 10px;
-       font-size: 18px;
+        width: 380px;
+        margin-top: 2%;
+        height: 45px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        border: 1px solid;
+        padding: 10px;
+        font-size: 18px;
      }
      form {
         margin-top: 1%
@@ -137,39 +121,40 @@
         display: inline-block;
         text-align: center;
         margin-left: 3%;
-
      }
      #smol {
-       font-size: 14px;
+        font-size: 14px;
    </style>
 
 </head>
 
 <body>
   <div class="maincontainer">
+  
     <div class="container1">
-      <table><tr><td class="half"><p id="title">Kappa Launcher OAuth Generator</p></td><td class="half"></td></tr></table>
+        <br>
+        <p id="title">Kappa Launcher OAuth Generator</p>
     </div>
+    
     <div class="container2">
     <hr>
-      <p id="first_p">Twitch API requires that the clientID used in the API request 
-                matches the clientID used to generate the OAuth token.</p>
+      <p>Twitch API requires that the clientID used in the API request 
+            matches the clientID used to generate the OAuth token.</p>
       <p>Use this tool to generate the OAuth token for Kappa Launcher. Then copy the token to your config 
-file, which is generated when you first launch the binary.</p>
-      <p id="bold">To revoke access, disconnect "Kappa Launcher" from your <a 
-href="http://www.twitch.tv/settings/connections">Twitch settings.</a></p>
+            file, which is generated when you first launch the binary.</p>
+      <p><b>To revoke access, disconnect "Kappa Launcher" from your 
+            <a href="https://www.twitch.tv/settings/connections" target=_blank>Twitch  settings.</a></b></p>
       <p>For more information, visit <a href="https://github.com/jp1995/kappa-launcher/" 
-target="_blank">Kappa Launcher on github.</a></p>
-      <p id="smol">This application uses the <a 
-href="https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow">implicit 
-code flow</a> for the Twitch API to retrieve your token. This means that the server has no means of storing 
-your token, and it is only visible to your browser. </p>
+            target="_blank">Kappa Launcher on github.</a></p>
+      <p id="smol">This application uses the 
+            <a href="https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow" target=_blank>
+            implicit code flow</a> for the Twitch API to retrieve your token. This means that the server has no means of storing 
+            your token, and it is only visible to your browser.</p>
       <div class="button">
-        <a 
-href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3lyhpjkzellmam3843w7eq3es84375&scope=user:read:follows&redirect_uri=https://jp1995.github.io/kappa/"
-id="button1">Generate</a>
+        <a href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3lyhpjkzellmam3843w7eq3es84375&scope=user:read:follows&redirect_uri=https://jp1995.github.io/kappa/" id="button1">Generate</a>
       </div>
     </div>
+    
     <div class="container3" id="hidden">
       <form class="" action="index.html" method="post">
         <label for="token">Token generation successful:</label>
@@ -177,33 +162,33 @@ id="button1">Generate</a>
         <input type="search" id="token" name="Your OAuth token is:" readonly>
         <p id="success"></p>
       </form>
-    
     </div>
+    
   </div>
     <script type="text/javascript">
     function getHashValue(key) {
     var matches = location.hash.match(new RegExp(key+'=([^&]*)'));
     return matches ? matches[1] : null;
     }
-    
+
     document.getElementById('token').value = getHashValue('access_token');
 
     document.getElementById('token').onclick = function() {
-      this.select();
-      document.execCommand('copy');
-      document.getElementById("success").innerHTML = "Copied to clipboard!";
+        this.select();
+        document.execCommand('copy');
+        document.getElementById("success").innerHTML = "Copied to clipboard!";
     }
     function hideDiv() {
-      if (getHashValue('access_token') == null) {
+        if (getHashValue('access_token') == null) {
         document.getElementById("hidden").style.display = "none";
-      } else {
+        } else {
         document.getElementById("hidden").style.display = "block";
-      }
+        }
     }
     document.addEventListener("DOMContentLoaded", function() {
         hideDiv();
     });
-  </script>
+    </script>
 </body>
 
 </html>
