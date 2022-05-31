@@ -140,23 +140,21 @@
     </div>
     <div class="container2">
     <hr>
-      <p id="first_p">As of May 1, 2020, the Helix API requires that the clientID provided in the corresponding header 
-matches the clientID used to generate the OAuth token. Because of this, a third-party generator could no 
-longer 
-be used.</p>
+      <p id="first_p">Twitch API requires that the clientID used in the API request 
+                matches the clientID used to generate the OAuth token.</p>
       <p>Use this tool to generate the OAuth token for Kappa Launcher. Then copy the token to your config 
 file, which is generated when you first launch the binary.</p>
       <p id="bold">To revoke access, disconnect "Kappa Launcher" from your <a 
 href="http://www.twitch.tv/settings/connections">Twitch settings.</a></p>
       <p>For more information, visit <a href="https://github.com/jp1995/kappa-launcher/" 
 target="_blank">Kappa Launcher on github.</a></p>
-      <p id="smol">(Technical: This application uses the <a 
+      <p id="smol">This application uses the <a 
 href="https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-implicit-code-flow">implicit 
 code flow</a> for the Twitch API to retrieve your token. This means that the server has no means of storing 
-your token, and it is only visible to your browser.) </p>
+your token, and it is only visible to your browser. </p>
       <div class="button">
         <a 
-href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3lyhpjkzellmam3843w7eq3es84375&scope=user:read:follows&redirect_uri=https://spheroid.xyz/kappa/"
+href="https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=3lyhpjkzellmam3843w7eq3es84375&scope=user:read:follows&redirect_uri=https://jp1995.github.io/kappa/"
 id="button1">Generate</a>
       </div>
     </div>
